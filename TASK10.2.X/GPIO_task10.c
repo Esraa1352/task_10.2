@@ -12,6 +12,8 @@
 void GPIO_init() {
     // PD6 (OC0A - PWM output) as output for motor control
     SET_PIN_AS_OUTPUT(DDRD, PD6);
+    SET_PIN_AS_OUTPUT(DDRD, PD7);
+    
 
     // PD2 (INT0) and PD3 (INT1) inputs for encoder signals
     SET_PIN_AS_INPUT(DDRD, PD2);
